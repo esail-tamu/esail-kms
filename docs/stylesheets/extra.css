@@ -1,0 +1,27 @@
+/* TAMU maroon theme, carried over from github.com/gerrypedraza/presentations */
+
+[data-md-color-primary=custom] {
+  --md-primary-fg-color: #500000;
+  --md-primary-fg-color--light: #732f2f;
+  --md-primary-fg-color--dark: #3c0000;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+}
+
+[data-md-color-accent=custom] {
+  --md-accent-fg-color: #732f2f;
+  --md-accent-fg-color--transparent: #732f2f1a;
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: #ffffffb3;
+}
+
+/* Maroon is too dark to read as link/accent text on the slate (dark) scheme's
+   near-black background (contrast ~1:1) — lighten it there only. */
+[data-md-color-scheme=slate][data-md-color-primary=custom] {
+  --md-typeset-a-color: #d47070;
+}
+
+[data-md-color-scheme=slate][data-md-color-accent=custom] {
+  --md-accent-fg-color: #d47070;
+  --md-accent-fg-color--transparent: #d4707033;
+}
