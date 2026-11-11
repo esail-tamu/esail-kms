@@ -35,6 +35,13 @@ theme:
 
 plugins:
   - search
+  - tags:
+      tags_allowed:
+        - accessibility
+        - agentic-ai
+        - beginner
+        - data-governance
+        - file-management
 
 extra_css:
   - stylesheets/extra.css
@@ -58,3 +65,4 @@ nav:
       - trainings/index.md
       - File Naming Convention:
           - trainings/file-naming-convention/index.md
+  - Tags: tags.md

@@ -17,7 +17,15 @@ Then open http://127.0.0.1:8000.
 1. Create a folder under `docs/trainings/<your-training>/` with an `index.md`.
 2. Add it to the `nav` section of `mkdocs.yml`.
 3. Add a card linking to it on `docs/index.md` and a row in `docs/trainings/index.md`.
-4. Push to `main` — the GitHub Action builds and deploys automatically.
+4. Give the page tags in its front matter so it shows up on the [tags index](docs/tags.md):
+   ```
+   ---
+   tags:
+     - beginner
+   ---
+   ```
+   Tags must be in the `tags_allowed` list in `mkdocs.yml` — add new ones there as the vocabulary grows, so tags stay a controlled, browsable set instead of sprawling.
+5. Push to `main` — the GitHub Action builds and deploys automatically.
 
 ## Deployment
 

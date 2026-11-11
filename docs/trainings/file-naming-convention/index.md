@@ -1,3 +1,9 @@
+---
+tags:
+  - file-management
+  - beginner
+---
+
 # File Naming Convention
 
 > Placeholder — replace with the actual training content.
