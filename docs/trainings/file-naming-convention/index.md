@@ -8,6 +8,8 @@ tags:
 
 > Placeholder — replace with the actual training content.
 
+[:material-folder-zip-outline: Download the starter project folder structure](downloads/course-project-template.zip){ .md-button }
+
 ## Why it matters
 
 Consistent file naming makes files searchable, sortable, and predictable across teams and tools.
