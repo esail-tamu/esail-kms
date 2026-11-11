@@ -22,10 +22,3 @@ Then open http://127.0.0.1:8000.
 ## Deployment
 
 Pushing to `main` triggers `.github/workflows/deploy.yml`, which runs `mkdocs gh-deploy` to publish the built site to the `gh-pages` branch. GitHub Pages must be configured (Settings → Pages) to serve from the `gh-pages` branch.
-
-## Renaming this repo
-
-When this repo is renamed to `esail-kms`, update:
-
-- `site_url`, `repo_url`, `repo_name` in `mkdocs.yml`
-- any links to the old repo name in this README

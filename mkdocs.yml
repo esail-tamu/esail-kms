@@ -1,8 +1,8 @@
 site_name: ESAIL KMS
 site_description: ESAIL training and tutorials
-site_url: https://esail-tamu.github.io/course-file-naming-convention/
-repo_url: https://github.com/esail-tamu/course-file-naming-convention
-repo_name: esail-tamu/course-file-naming-convention
+site_url: https://esail-tamu.github.io/esail-kms/
+repo_url: https://github.com/esail-tamu/esail-kms
+repo_name: esail-tamu/esail-kms
 edit_uri: edit/main/docs/
 
 theme:
