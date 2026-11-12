@@ -30,7 +30,14 @@
    --md-primary-fg-color for its text/border via currentColor, same
    contrast problem as above. .md-button--primary is unaffected since
    it uses that color as a *background* with white text, which is
-   fine in both themes. */
-[data-md-color-scheme=slate] .md-button:not(.md-button--primary) {
+   fine in both themes.
+
+   :not(:hover):not(:focus) matters: Material's own hover/focus rule
+   (.md-typeset .md-button:hover) has the same specificity and sets
+   color to --md-accent-bg-color (white) against a filled
+   --md-accent-fg-color background. Without excluding hover/focus
+   here, this rule's later position in the stylesheet would win and
+   force the text to the *same* color as that fill, erasing it. */
+[data-md-color-scheme=slate] .md-button:not(.md-button--primary):not(:hover):not(:focus) {
   color: var(--md-accent-fg-color);
 }
