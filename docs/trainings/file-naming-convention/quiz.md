@@ -3,6 +3,7 @@ tags:
   - file-management
   - beginner
   - quiz
+  - gap-bronze
 ---
 
 # Check Your Understanding

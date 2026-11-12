@@ -2,11 +2,10 @@
 tags:
   - file-management
   - beginner
+  - gap-bronze
 ---
 
 # File Naming Convention
-
-[:material-folder-zip-outline: Download the starter project folder structure](downloads/course-project-template.zip){ .md-button }
 
 ## Why it matters
 
@@ -33,8 +32,6 @@ Every course project at ESAIL has two sides:
 - `01-SME-Content` and `02-eSAIL-Production` are **numbered** so they always sort in that order in a file browser, regardless of case. `Work` and `Final` aren't — with only the two of them, numbering doesn't buy much, so they're left simple.
 - **`SME-Content`, `Work`, and `Final` have no required subfolders** — they're left flat on purpose. See [Why no subfolders](#why-no-subfolders) below for why that works once you've seen how the naming convention works.
 - The **Syllabus is a plain top-level file**, not its own folder, alongside `Course_Map-26C.xlsx` and `Recording_Schedule-26C.xlsx` — all three track the whole project rather than living inside the SME or eSAIL side. Notice the term code `26C` only ever leads a name on the project folder itself; on every file, it trails at the end instead — see [Naming instructional objects](#naming-instructional-objects).
-
-Download the starter structure above and rename the top folder, course code, and instructor name for your project.
 
 ## Naming the project folder
 
@@ -143,7 +140,7 @@ ENGR123-Syllabus-26C.pdf
 
 ## Tracking content: the course map
 
-The downloadable template includes `ENGR123-Course_Map-26C.xlsx` — a spreadsheet that inventories every piece of content (week, module, topic, title, file name) alongside an eSAIL production checklist (video editing, captions, ID check, SME review, Canvas upload, etc.), plus links to the source file and its Descript editing project. See its **Legend** tab for a full column-by-column reference.
+Every project keeps an `ENGR123-Course_Map-26C.xlsx` — a spreadsheet that inventories every piece of content (week, module, topic, title, file name) alongside an eSAIL production checklist (video editing, captions, ID check, SME review, Canvas upload, etc.), plus links to the source file and its Descript editing project. It carries a **Legend** tab with a full column-by-column reference, including this same naming convention.
 
 ## Check your understanding
 

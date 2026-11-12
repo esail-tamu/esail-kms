@@ -42,6 +42,9 @@ plugins:
         - beginner
         - data-governance
         - file-management
+        - gap-bronze
+        - gap-silver
+        - gap-gold
         - quiz
 
 extra_css:
