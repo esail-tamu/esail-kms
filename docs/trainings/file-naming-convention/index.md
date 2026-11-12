@@ -71,6 +71,7 @@ Every file name leads with the course code, then whatever locates it, then a 3-l
 | `ASG` | Assignment — also covers Homework, Exam, and Project, since Canvas implements all of those as an Assignment under the hood |
 | `DIS` | Discussion |
 | `FIL` | Files / attachment tool — standalone distributable documents (readings, professor notes) |
+| `PAG` | Pages — delivered as a Canvas page (readable in the browser) instead of a downloadable file |
 | `UNK` | Tool not yet decided |
 
 There are two shapes, depending on whether the content belongs to one point in the course or to the course as a whole:

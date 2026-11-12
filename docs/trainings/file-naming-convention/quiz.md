@@ -443,9 +443,20 @@ Once you finish, your email and a quick attempts-per-question summary are sent t
         });
         html += '<p class="fnc-feedback" id="fnc-live-feedback"></p>';
         html += '<button type="button" id="fnc-live-check">Check answer</button>';
+        html += '<button type="button" id="fnc-live-next" hidden>Next question</button>';
         mount.innerHTML = html;
 
         document.getElementById("fnc-live-check").addEventListener("click", checkAnswer);
+        document.getElementById("fnc-live-next").addEventListener("click", goToNextQuestion);
+      }
+
+      function goToNextQuestion() {
+        session.index++;
+        if (session.index >= session.questions.length) {
+          finishQuiz();
+        } else {
+          renderQuestion();
+        }
       }
 
       function checkAnswer() {
@@ -464,18 +475,16 @@ Once you finish, your email and a quick attempts-per-question summary are sent t
         if (chosen === q.correct) {
           feedback.textContent = "Correct!";
           feedback.className = "fnc-feedback fnc-feedback-correct";
-          document.getElementById("fnc-live-check").disabled = true;
           mount.querySelectorAll("input[type='radio']").forEach(function (r) {
             r.disabled = true;
           });
-          session.index++;
-          setTimeout(function () {
-            if (session.index >= session.questions.length) {
-              finishQuiz();
-            } else {
-              renderQuestion();
-            }
-          }, 700);
+          var checkBtn = document.getElementById("fnc-live-check");
+          var nextBtn = document.getElementById("fnc-live-next");
+          checkBtn.hidden = true;
+          nextBtn.hidden = false;
+          nextBtn.textContent =
+            session.index + 1 >= session.questions.length ? "See results" : "Next question";
+          nextBtn.focus();
         } else {
           session.attempts[session.index]++;
           feedback.textContent = "Not quite — try again.";
