@@ -20,6 +20,10 @@ Each training lives under `docs/trainings/<slug>/` and is built from up to three
 6. If the training is part of the GAP student program, tag it with the level it belongs to: `gap-bronze`, `gap-silver`, or `gap-gold` (GAP-bronze is the track for new students — this File Naming Convention training is part of it).
 7. Build locally (`mkdocs build --strict`) and actually look at it in a browser before pushing — a clean build does not mean the page looks or works right, especially for anything with custom JS (see below).
 
+## "Last updated" dates
+
+Every page footer shows a "Last updated" date (via `mkdocs-git-revision-date-localized-plugin`), and that date is a link to the file's real commit history on GitHub (`overrides/partials/source-file.html` adds the link; the plugin itself only renders text). This depends on the full git log being available, which means **the GitHub Action's checkout must use `fetch-depth: 0`** — the default shallow clone only has the latest commit, and the plugin would silently show the wrong (or same) date for every file. If you ever touch `.github/workflows/deploy.yml`, don't let that setting get lost.
+
 ## The quiz pattern
 
 The File Naming Convention quiz (`quiz.md`) is a reusable pattern, not a one-off:
