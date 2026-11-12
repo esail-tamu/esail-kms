@@ -41,3 +41,16 @@
 [data-md-color-scheme=slate] .md-button:not(.md-button--primary):not(:hover):not(:focus) {
   color: var(--md-accent-fg-color);
 }
+
+/* Heading permalinks (the paragraph-mark next to each heading) stay
+   fully functional — still a real link, still clickable, still
+   revealed by keyboard focus for accessibility — just visually
+   blended into the page background instead of shown in the accent
+   color, since the table of contents already covers jumping to any
+   section. */
+.md-typeset .headerlink,
+.md-typeset .headerlink:focus,
+.md-typeset .headerlink:hover,
+.md-typeset :target > .headerlink {
+  color: var(--md-default-bg-color);
+}
