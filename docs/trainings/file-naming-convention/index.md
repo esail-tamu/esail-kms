@@ -23,42 +23,16 @@ Every course project at ESAIL has two sides:
 26C-ENGR123-Abbrev_Title-SMELastname/
 ├── 26C-ENGR123-Course_Map.xlsx
 ├── 26C-ENGR123-Recording_Schedule.xlsx
+├── ENGR123-Syllabus-26C.pdf
 ├── 01-SME-Content/
-│   ├── Assignments/
-│   ├── Discussions/
-│   ├── Exams/
-│   ├── Labs/
-│   ├── Lectures/
-│   ├── Other/
-│   ├── Projects/
-│   ├── Quizzes/
-│   └── Slides/
 └── 02-eSAIL-Production/
-    ├── 01-Syllabus/
-    ├── 02-Work/
-    │   ├── Assignments/
-    │   ├── Discussions/
-    │   ├── Exams/
-    │   ├── Labs/
-    │   ├── Lectures/
-    │   ├── Projects/
-    │   ├── Quizzes/
-    │   └── Slides/
-    └── 03-Final/
-        ├── Assignments/
-        ├── Discussions/
-        ├── Exams/
-        ├── Labs/
-        ├── Lectures/
-        ├── Projects/
-        ├── Quizzes/
-        └── Slides/
+    ├── Work/
+    └── Final/
 ```
 
-- `01-SME-Content` and `02-eSAIL-Production` are **numbered** so they always sort in that order in a file browser, regardless of case — same reason `01-Syllabus`, `02-Work`, `03-Final` are numbered rather than alphabetical (which would otherwise read Final, Syllabus, Work).
-- `02-Work` and `03-Final` always mirror the same eight content-type categories, so nothing is ever "missing" a folder even if unused for a given course.
-- `Other` only exists on the SME side, for anything that doesn't fit one of the eight categories (administrative files, misc handouts).
-- `Course_Map.xlsx` and `Recording_Schedule.xlsx` live at the very top, outside both sides, since they track the whole project rather than belong to one side.
+- `01-SME-Content` and `02-eSAIL-Production` are **numbered** so they always sort in that order in a file browser, regardless of case. `Work` and `Final` aren't — with only the two of them, numbering doesn't buy much, so they're left simple.
+- **No enforced subfolders inside `SME-Content`, `Work`, or `Final`.** With file naming carrying the type code (`VID`, `QIZ`, `ASG`, etc.), a folder-level category isn't doing much extra work — so these are left flat. Using subfolders to group things by content type is a fine recommendation if it helps you browse, just not a requirement; a strong file name should make a file identifiable on its own either way.
+- The **Syllabus is a plain top-level file**, not its own folder, alongside `Course_Map.xlsx` and `Recording_Schedule.xlsx` — all three track the whole project rather than living inside the SME or eSAIL side.
 
 Download the starter structure above and rename the top folder, course code, and instructor name for your project.
 
