@@ -6,7 +6,7 @@ Training and tutorials for ESAIL, published as a browsable knowledge base.
 
 <div class="grid cards" markdown>
 
--   :material-file-document-outline: **File Naming Convention**
+-   ![File Naming Convention badge](trainings/file-naming-convention/assets/badge.svg){ width="40" } **File Naming Convention**
 
     ---
 

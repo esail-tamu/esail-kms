@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b1f1f"/>
+      <stop offset="100%" stop-color="#3c0000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shield: both the badge outline and the "standardization" motif -->
+  <path d="M100,14
+           C125,14 150,21 166,30
+           L166,98
+           C166,138 138,170 100,186
+           C62,170 34,138 34,98
+           L34,30
+           C50,21 75,14 100,14 Z"
+        fill="url(#shieldGrad)" stroke="#2a0000" stroke-width="3"/>
+  <path d="M100,14
+           C125,14 150,21 166,30
+           L166,98
+           C166,138 138,170 100,186
+           C62,170 34,138 34,98
+           L34,30
+           C50,21 75,14 100,14 Z"
+        fill="none" stroke="#d6d3c4" stroke-width="2" opacity="0.55"/>
+
+  <!-- folder -->
+  <path d="M54,78 L84,78 L92,87 L146,87 C149,87 151,89 151,92 L151,130 C151,133 149,135 146,135 L54,135 C51,135 49,133 49,130 L49,83 C49,80 51,78 54,78 Z"
+        fill="#f4f1e8"/>
+  <path d="M49,92 L151,92 L144,131 C143.4,133.4 141.2,135 138.7,135 L61.3,135 C58.8,135 56.6,133.4 56,131 L49,92 Z"
+        fill="#d6d3c4"/>
+
+  <!-- lock badge, overlapping the folder's bottom-right corner -->
+  <circle cx="140" cy="128" r="22" fill="#500000" stroke="#f4f1e8" stroke-width="3"/>
+  <path d="M132,124 v-5 a8,8 0 0 1 16,0 v5" fill="none" stroke="#f4f1e8" stroke-width="3.2" stroke-linecap="round"/>
+  <rect x="129" y="123" width="22" height="16" rx="3" fill="#f4f1e8"/>
+  <circle cx="140" cy="129.5" r="2.6" fill="#500000"/>
+  <rect x="139" y="131" width="2" height="5" fill="#500000"/>
+
+  <!-- filename strip -->
+  <rect x="48" y="152" width="104" height="20" rx="4" fill="#2a0000"/>
+  <text x="100" y="166" text-anchor="middle" font-family="'Cascadia Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="700" fill="#f4f1e8">ENGR123</text>
+</svg>
