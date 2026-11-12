@@ -31,7 +31,7 @@ Every course project at ESAIL has two sides:
 ```
 
 - `01-SME-Content` and `02-eSAIL-Production` are **numbered** so they always sort in that order in a file browser, regardless of case. `Work` and `Final` aren't — with only the two of them, numbering doesn't buy much, so they're left simple.
-- **No enforced subfolders inside `SME-Content`, `Work`, or `Final`.** With file naming carrying the type code (`VID`, `QIZ`, `ASG`, etc.), a folder-level category isn't doing much extra work — so these are left flat. Using subfolders to group things by content type is a fine recommendation if it helps you browse, just not a requirement; a strong file name should make a file identifiable on its own either way.
+- **`SME-Content`, `Work`, and `Final` have no required subfolders** — they're left flat on purpose. See [Why no subfolders](#why-no-subfolders) below for why that works once you've seen how the naming convention works.
 - The **Syllabus is a plain top-level file**, not its own folder, alongside `Course_Map-26C.xlsx` and `Recording_Schedule-26C.xlsx` — all three track the whole project rather than living inside the SME or eSAIL side. Notice the term code `26C` only ever leads a name on the project folder itself; on every file, it trails at the end instead — see [Naming instructional objects](#naming-instructional-objects).
 
 Download the starter structure above and rename the top folder, course code, and instructor name for your project.
@@ -95,6 +95,22 @@ course    type   label    index    descriptor
 A label after the type code (`Homework`, `Exam`, `Project`) is optional, and only earns its place when the type code alone is ambiguous about which flavor this is — which is mostly `ASG`, since it covers several different kinds of submission. `QIZ` or `DIS` rarely need one. A redundant label (`QIZ-Quiz-01`) isn't wrong, just unnecessary.
 
 Descriptors are always optional, but strongly recommended for `VID`.
+
+### Why no subfolders
+
+Because the type code is baked into the name, a flat folder is still easy to scan — nothing here needs a `Videos/` or `Quizzes/` folder to tell it apart from anything else in the same folder:
+
+```text
+Work/
+├── ENGR123-M01-T01-VID-intro_to_loops.mp4
+├── ENGR123-M01-T01-VID-intro_to_loops.pptx
+├── ENGR123-QIZ-01.md
+├── ENGR123-DIS-05-ethics_in_ai.md
+├── ENGR123-ASG-Homework-01-differential_equations.md
+└── ENGR123-ASG-Exam-01.md
+```
+
+`VID`, `QIZ`, `ASG`, and `DIS` already say what each file is. Grouping by content type into subfolders is still a fine personal habit if it helps you browse, just not something the convention requires.
 
 **Multi-part** content gets a `-Part-A` / `-Part-B` suffix — capitalized, since it's hierarchical/structural, not content. Use it for genuine sequential parts, or just to tell apart two items that would otherwise land on an identical name:
 
