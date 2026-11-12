@@ -21,8 +21,8 @@ Every course project at ESAIL has two sides:
 
 ```text
 26C-ENGR123-Abbrev_Title-SMELastname/
-├── 26C-ENGR123-Course_Map.xlsx
-├── 26C-ENGR123-Recording_Schedule.xlsx
+├── ENGR123-Course_Map-26C.xlsx
+├── ENGR123-Recording_Schedule-26C.xlsx
 ├── ENGR123-Syllabus-26C.pdf
 ├── 01-SME-Content/
 └── 02-eSAIL-Production/
@@ -32,7 +32,7 @@ Every course project at ESAIL has two sides:
 
 - `01-SME-Content` and `02-eSAIL-Production` are **numbered** so they always sort in that order in a file browser, regardless of case. `Work` and `Final` aren't — with only the two of them, numbering doesn't buy much, so they're left simple.
 - **No enforced subfolders inside `SME-Content`, `Work`, or `Final`.** With file naming carrying the type code (`VID`, `QIZ`, `ASG`, etc.), a folder-level category isn't doing much extra work — so these are left flat. Using subfolders to group things by content type is a fine recommendation if it helps you browse, just not a requirement; a strong file name should make a file identifiable on its own either way.
-- The **Syllabus is a plain top-level file**, not its own folder, alongside `Course_Map.xlsx` and `Recording_Schedule.xlsx` — all three track the whole project rather than living inside the SME or eSAIL side.
+- The **Syllabus is a plain top-level file**, not its own folder, alongside `Course_Map-26C.xlsx` and `Recording_Schedule-26C.xlsx` — all three track the whole project rather than living inside the SME or eSAIL side. Notice the term code `26C` only ever leads a name on the project folder itself; on every file, it trails at the end instead — see [Naming instructional objects](#naming-instructional-objects).
 
 Download the starter structure above and rename the top folder, course code, and instructor name for your project.
 
@@ -114,7 +114,7 @@ ENGR123-Syllabus-26C.pdf
 | File name | Meaning |
 |---|---|
 | `26C-ENGR123-Abbrev_Title-Lastname` | The project folder for ENGR123, Fall 2026, taught by Lastname |
-| `26C-ENGR123-Course_Map.xlsx` | The course map for that same project |
+| `ENGR123-Course_Map-26C.xlsx` | The course map for that same project |
 | `ENGR123-Syllabus-26C.pdf` | The syllabus for the Fall 2026 offering |
 | `ENGR123-M01-T01-VID-intro_to_loops.mp4` | Module 1, Topic 1 video: "Intro to Loops" |
 | `ENGR123-M01-T01-VID-intro_to_loops.pptx` | That same video's slide deck — same name, different extension |
@@ -126,7 +126,7 @@ ENGR123-Syllabus-26C.pdf
 
 ## Tracking content: the course map
 
-The downloadable template includes `26C-ENGR123-Course_Map.xlsx` — a spreadsheet that inventories every piece of content (week, module, topic, title, file name) alongside an eSAIL production checklist (video editing, captions, ID check, SME review, Canvas upload, etc.), plus links to the source file and its Descript editing project. See its **Legend** tab for a full column-by-column reference.
+The downloadable template includes `ENGR123-Course_Map-26C.xlsx` — a spreadsheet that inventories every piece of content (week, module, topic, title, file name) alongside an eSAIL production checklist (video editing, captions, ID check, SME review, Canvas upload, etc.), plus links to the source file and its Descript editing project. See its **Legend** tab for a full column-by-column reference.
 
 ## Check your understanding
 
