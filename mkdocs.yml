@@ -1,8 +1,8 @@
 site_name: ESAIL KMS
 site_description: ESAIL training and tutorials
 site_url: https://kms.esail.work/
-repo_url: https://github.com/esail-tamu/esail-kms
-repo_name: esail-tamu/esail-kms
+repo_url: https://github.com/esail-work/kms
+repo_name: esail-work/kms
 edit_uri: edit/main/docs/
 
 theme:

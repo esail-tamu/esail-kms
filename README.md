@@ -32,3 +32,7 @@ See **[AUTHORING.md](AUTHORING.md)** for the deeper patterns — the self-gradin
 ## Deployment
 
 Pushing to `main` triggers `.github/workflows/deploy.yml`, which runs `mkdocs gh-deploy` to publish the built site to the `gh-pages` branch. GitHub Pages must be configured (Settings → Pages) to serve from the `gh-pages` branch.
+
+## Hosting / teardown
+
+The site is served at [kms.esail.work](https://kms.esail.work/) via GitHub Pages, with a Cloudflare CNAME (`kms` → `esail-work.github.io`). If this repository or its Pages site is ever deleted or renamed, the `kms` CNAME in Cloudflare must be removed at the same time. The publishing bot handles DNS.
